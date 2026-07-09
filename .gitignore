@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset
+data/
+CUB_200_2011/
+*.tgz
+
+# PyTorch checkpoints (optional)
+*.pth
+*.pt
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
