@@ -1,6 +1,6 @@
 import torch
 
-def validate(model, device, val_loader, criterion, best_val_acc):
+def validate(model, device, val_loader, criterion):
     model.eval()
 
     val_loss = 0.0
@@ -27,11 +27,6 @@ def validate(model, device, val_loader, criterion, best_val_acc):
 
     val_loss /= len(val_loader)
     val_acc = 100 * val_correct / val_total
-
-    if val_acc > best_val_acc:
-      best_val_acc = val_acc
-      torch.save(model.state_dict(), "best_bird_model.pth")
-      print("Best model saved!")
 
     return (val_acc, val_loss, val_acc)
 

@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from torchvision import transforms
 from torch.utils.data import DataLoader
-from dataset import BirdDataset
+from src.dataset import BirdDataset
 from sklearn.model_selection import train_test_split
 
 def load_dataframe(DATASET_PATH):
