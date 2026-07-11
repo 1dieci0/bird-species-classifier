@@ -29,7 +29,7 @@ Final evaluation on the test set:
 
 | Metric | Result |
 |---|---:|
-| Test Accuracy | **72.25%** |
+| Test Accuracy | **71.61%** |
 | Number of Classes | 200 |
 | Model | ResNet-18 |
 
@@ -154,97 +154,6 @@ bird-species-classifier/
 ```
 
 ---
-
-## Installation
-
-Clone the repository:
-
-```bash
-git clone <repository-url>
-
-cd bird-species-classifier
-```
-
-Create a virtual environment:
-
-```bash
-python -m venv .venv
-```
-
-Activate it:
-
-### Linux / macOS
-
-```bash
-source .venv/bin/activate
-```
-
-### Windows
-
-```bash
-.venv\Scripts\activate
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Training
-
-To train the model:
-
-```bash
-python src/train.py
-```
-
-The best-performing model will be saved as:
-
-```
-models/best_bird_model.pth
-```
-
----
-
-## Inference
-
-To classify a new bird image:
-
-```bash
-python src/predict.py --image path/to/image.jpg
-```
-
-Example output:
-
-```
-Prediction:
-001.Black_footed_Albatross
-
-Confidence:
-92.4%
-```
-
----
-
-## Example Predictions
-
-(Add prediction images here)
-
-Example:
-
-```
-Input image
-     ↓
-Model
-     ↓
-Prediction + confidence score
-```
-
----
-
 ## Future Improvements
 
 Possible improvements:
