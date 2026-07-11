@@ -28,7 +28,7 @@ def validate(model, device, val_loader, criterion):
     val_loss /= len(val_loader)
     val_acc = 100 * val_correct / val_total
 
-    return (val_acc, val_loss, val_acc)
+    return val_loss, val_acc
 
 def test():
     return
