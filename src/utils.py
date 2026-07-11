@@ -16,12 +16,3 @@ def load_classes(DATASET_PATH):
         names=["class_id", "class_name"]
     )
     return classes["class_name"].tolist()
-  
-
-def plot_accuracy():
-    return
-
-def plot_loss():
-    return
-
-
